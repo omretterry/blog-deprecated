@@ -45,7 +45,7 @@
     
     <title>
         
-            归档 | 
+            PhaserJS微信小游戏尝试 | 
         
         Terry Blog
     </title>
@@ -217,7 +217,7 @@
     <!-- WebAPP Icons -->
     <meta name="mobile-web-app-capable" content="yes">
     <meta name="application-name" content="Terry Blog">
-    <meta name="msapplication-starturl" content="http://omret.com/archives/">
+    <meta name="msapplication-starturl" content="http://omret.com/2018/05/27/PhaserJS微信小游戏尝试/">
     <meta name="msapplication-navbutton-color" content="#0097A7">
     <meta name="apple-mobile-web-app-capable" content="yes">
     <meta name="apple-mobile-web-app-title" content="Terry Blog">
@@ -232,13 +232,16 @@
     
 
     <!-- The Open Graph protocol -->
-    <meta property="og:url" content="http://omret.com/archives/">
+    <meta property="og:url" content="http://omret.com/2018/05/27/PhaserJS微信小游戏尝试/">
     <meta property="og:type" content="blog">
-    <meta property="og:title" content="归档 | Terry Blog">
+    <meta property="og:title" content="PhaserJS微信小游戏尝试 | Terry Blog">
     <meta property="og:image" content="/img/favicon.png">
     <meta property="og:description" content="">
     
 
+    
+        <meta property="article:published_time" content="Sun May 27 2018 15:29:48 GMT+0800">
+        <meta property="article:modified_time" content="Sun May 27 2018 16:31:27 GMT+0800">
     
 
     <!-- The Twitter Card protocol -->
@@ -246,13 +249,43 @@
 
     <!-- Add canonical link for SEO -->
     
-        <link rel="canonical" href="http://omret.com/archives/index.html" />
+        <link rel="canonical" href="http://omret.com/2018/05/27/PhaserJS微信小游戏尝试/index.html" />
     
 
     <!-- Structured-data for SEO -->
     
         
 
+
+<script type="application/ld+json">
+{
+    "@context": "https://schema.org",
+    "@type": "BlogPosting",
+    "mainEntityOfPage": "http://omret.com/2018/05/27/PhaserJS微信小游戏尝试/index.html",
+    "headline": "PhaserJS微信小游戏尝试",
+    "datePublished": "Sun May 27 2018 15:29:48 GMT+0800",
+    "dateModified": "Sun May 27 2018 16:31:27 GMT+0800",
+    "author": {
+        "@type": "Person",
+        "name": "terry.li",
+        "image": {
+            "@type": "ImageObject",
+            "url": "/img/header.jpg"
+        },
+        "description": "欢迎来到Terry.li的个人博客"
+    },
+    "publisher": {
+        "@type": "Organization",
+        "name": "Terry Blog",
+        "logo": {
+            "@type":"ImageObject",
+            "url": "/img/favicon.png"
+        }
+    },
+    "keywords": "",
+    "description": "",
+}
+</script>
 
 
     
@@ -286,261 +319,242 @@
                         </button>
                     
 
-                    <!-- Index Module -->
-<div class="material-index mdl-grid">
-    
-    <div class="locate-thumbnail-symbol"></div>
+                    <!-- Post TOC -->
 
-    <!-- Pin on top -->
+    
+    <!-- Back Button -->
+    <!--
+    <div class="material-back" id="backhome-div" tabindex="0">
+        <a class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon"
+           href="#" onclick="window.history.back();return false;"
+           target="_self"
+           role="button"
+           data-upgraded=",MaterialButton,MaterialRipple">
+            <i class="material-icons" role="presentation">arrow_back</i>
+            <span class="mdl-button__ripple-container">
+                <span class="mdl-ripple"></span>
+            </span>
+        </a>
+    </div>
+    -->
+
+
+    <!-- Left aligned menu below button -->
+    
+    
+    <button id="post-toc-trigger-btn"
+        class="mdl-button mdl-js-button mdl-button--icon">
+        <i class="material-icons">format_list_numbered</i>
+    </button>
+
+    <ul class="post-toc-wrap mdl-menu mdl-menu--bottom-left mdl-js-menu mdl-js-ripple-effect" for="post-toc-trigger-btn" style="max-height:80vh; overflow-y:scroll;">
+        <ol class="post-toc"><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#PhaserJS微信小游戏的简单尝试"><span class="post-toc-number">1.</span> <span class="post-toc-text">PhaserJS微信小游戏的简单尝试</span></a><ol class="post-toc-child"><li class="post-toc-item post-toc-level-4"><a class="post-toc-link" href="#前言"><span class="post-toc-number">1.1.</span> <span class="post-toc-text">前言</span></a><ol class="post-toc-child"><li class="post-toc-item post-toc-level-5"><a class="post-toc-link" href="#想法"><span class="post-toc-number">1.1.1.</span> <span class="post-toc-text">想法</span></a></li><li class="post-toc-item post-toc-level-5"><a class="post-toc-link" href="#开发"><span class="post-toc-number">1.1.2.</span> <span class="post-toc-text">开发</span></a></li></ol></li></ol></li><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#后话"><span class="post-toc-number">2.</span> <span class="post-toc-text">后话</span></a><ol class="post-toc-child"><li class="post-toc-item post-toc-level-4"><a class="post-toc-link" href="#发布"><span class="post-toc-number">2.1.</span> <span class="post-toc-text">发布</span></a><ol class="post-toc-child"><li class="post-toc-item post-toc-level-5"><a class="post-toc-link" href="#于是我放弃了。。。"><span class="post-toc-number">2.1.1.</span> <span class="post-toc-text">于是我放弃了。。。</span></a></li></ol></li></ol></li></ol>
+    </ul>
     
 
-    <!-- Normal Post -->
-    
-        
-            
-                <!-- Paradox Thumbnail -->
-                <div class="post_entry-module mdl-card mdl-shadow--2dp mdl-cell mdl-cell--12-col fade out">
-    <!-- Post Thumbnail -->
+
+
+
+<!-- Layouts -->
+
+    <!-- Post Module -->
+    <div class="material-post_container">
+
+        <div class="material-post mdl-grid">
+            <div class="mdl-card mdl-shadow--4dp mdl-cell mdl-cell--12-col">
+
+                <!-- Post Header(Thumbnail & Title) -->
+                
+    <!-- Paradox Post Header -->
     
         
             <!-- Random Thumbnail -->
             <div class="post_thumbnail-random mdl-card__media mdl-color-text--grey-50">
-        
-    
+            <script type="text/ls-javascript" id="post-thumbnail-script">
+    var randomNum = Math.floor(Math.random() * 19 + 1);
 
-        <!-- Post Title -->
-        <p class="article-headline-p"><a href="/2018/05/27/PhaserJS微信小游戏尝试/">PhaserJS微信小游戏尝试</a></p>
-    </div>
-
-    <!-- Post Excerpt -->
-    <div class="mdl-color-text--grey-600 mdl-card__supporting-text post_entry-content">
-        
-            
-        
-        &nbsp;&nbsp;&nbsp;
-        <span>
-            <a href="/2018/05/27/PhaserJS微信小游戏尝试/" target="_self">阅读全文</a>
-        </span>
-    </div>
-    <!-- Post_entry Info-->
-    <div id="post_entry-info">
-        <div id="post_entry-left-info" class="mdl-card__supporting-text meta mdl-color-text--grey-600 ">
-            <!-- Author Avatar -->
-            <div id="author-avatar">
-                <img src="/img/header.jpg" width="44px" height="44px" alt="terry.li's avatar">
-            </div>
-            <div>
-                <strong>terry.li</strong>
-                <span>5月 27, 2018</span>
-            </div>
-        </div>
-        <div id="post_entry-right-info">
-          
-
-            
-
-            
-
-            <!-- Post Views -->
-            <span class="post_entry-views">
-            </span>
-        </div>
-    </div>
-</div>
-
-            
-            
-        
-    
-        
-            
-                <!-- Paradox Thumbnail -->
-                <div class="post_entry-module mdl-card mdl-shadow--2dp mdl-cell mdl-cell--12-col fade out">
-    <!-- Post Thumbnail -->
-    
-        
-            <!-- Random Thumbnail -->
-            <div class="post_thumbnail-random mdl-card__media mdl-color-text--grey-50">
-        
-    
-
-        <!-- Post Title -->
-        <p class="article-headline-p"><a href="/2018/05/21/20分钟H5编程挑战：Flappy-Bird/">20分钟H5编程挑战（一）：Flappy Bird</a></p>
-    </div>
-
-    <!-- Post Excerpt -->
-    <div class="mdl-color-text--grey-600 mdl-card__supporting-text post_entry-content">
-        
-            前言完成Phase...
-        
-        &nbsp;&nbsp;&nbsp;
-        <span>
-            <a href="/2018/05/21/20分钟H5编程挑战：Flappy-Bird/" target="_self">阅读全文</a>
-        </span>
-    </div>
-    <!-- Post_entry Info-->
-    <div id="post_entry-info">
-        <div id="post_entry-left-info" class="mdl-card__supporting-text meta mdl-color-text--grey-600 ">
-            <!-- Author Avatar -->
-            <div id="author-avatar">
-                <img src="/img/header.jpg" width="44px" height="44px" alt="terry.li's avatar">
-            </div>
-            <div>
-                <strong>terry.li</strong>
-                <span>5月 21, 2018</span>
-            </div>
-        </div>
-        <div id="post_entry-right-info">
-          
-
-            
-
-            
-
-            <!-- Post Views -->
-            <span class="post_entry-views">
-            </span>
-        </div>
-    </div>
-</div>
-
-            
-            
-        
-    
-        
-            
-                <!-- Paradox Thumbnail -->
-                <div class="post_entry-module mdl-card mdl-shadow--2dp mdl-cell mdl-cell--12-col fade out">
-    <!-- Post Thumbnail -->
-    
-        
-            <!-- Random Thumbnail -->
-            <div class="post_thumbnail-random mdl-card__media mdl-color-text--grey-50">
-        
-    
-
-        <!-- Post Title -->
-        <p class="article-headline-p"><a href="/2018/05/21/PhaserJS-入门教程上线！/">PhaserJS 入门教程上线！</a></p>
-    </div>
-
-    <!-- Post Excerpt -->
-    <div class="mdl-color-text--grey-600 mdl-card__supporting-text post_entry-content">
-        
-            
-        
-        &nbsp;&nbsp;&nbsp;
-        <span>
-            <a href="/2018/05/21/PhaserJS-入门教程上线！/" target="_self">阅读全文</a>
-        </span>
-    </div>
-    <!-- Post_entry Info-->
-    <div id="post_entry-info">
-        <div id="post_entry-left-info" class="mdl-card__supporting-text meta mdl-color-text--grey-600 ">
-            <!-- Author Avatar -->
-            <div id="author-avatar">
-                <img src="/img/header.jpg" width="44px" height="44px" alt="terry.li's avatar">
-            </div>
-            <div>
-                <strong>terry.li</strong>
-                <span>5月 21, 2018</span>
-            </div>
-        </div>
-        <div id="post_entry-right-info">
-          
-
-            
-
-            
-
-            <!-- Post Views -->
-            <span class="post_entry-views">
-            </span>
-        </div>
-    </div>
-</div>
-
-            
-            
-        
-    
-        
-            
-                <!-- Paradox Thumbnail -->
-                <div class="post_entry-module mdl-card mdl-shadow--2dp mdl-cell mdl-cell--12-col fade out">
-    <!-- Post Thumbnail -->
-    
-        
-            <!-- Random Thumbnail -->
-            <div class="post_thumbnail-random mdl-card__media mdl-color-text--grey-50">
-        
-    
-
-        <!-- Post Title -->
-        <p class="article-headline-p"><a href="/2018/05/20/将wordpress替换成github-page/">将wordpress替换成github page</a></p>
-    </div>
-
-    <!-- Post Excerpt -->
-    <div class="mdl-color-text--grey-600 mdl-card__supporting-text post_entry-content">
-        
-            人生苦短，为了减少维护维护服务器所花去的生命，我决定使用全球最大的同性交友网站github来serve我的blog。 之后我会将之前wordpres...
-        
-        &nbsp;&nbsp;&nbsp;
-        <span>
-            <a href="/2018/05/20/将wordpress替换成github-page/" target="_self">阅读全文</a>
-        </span>
-    </div>
-    <!-- Post_entry Info-->
-    <div id="post_entry-info">
-        <div id="post_entry-left-info" class="mdl-card__supporting-text meta mdl-color-text--grey-600 ">
-            <!-- Author Avatar -->
-            <div id="author-avatar">
-                <img src="/img/header.jpg" width="44px" height="44px" alt="terry.li's avatar">
-            </div>
-            <div>
-                <strong>terry.li</strong>
-                <span>5月 20, 2018</span>
-            </div>
-        </div>
-        <div id="post_entry-right-info">
-          
-
-            
-
-            
-
-            <!-- Post Views -->
-            <span class="post_entry-views">
-            </span>
-        </div>
-    </div>
-</div>
-
-            
-            
-        
-    
-
-    
-
-    
-        <script type="text/ls-javascript" id="thumbnail-script">
-    var randomNum;
-
-    var locatePost = $('.locate-thumbnail-symbol').next();
-    for(var i = 0; i < 10; i++) {
-        randomNum = Math.floor(Math.random() * 19 + 1);
-
-        locatePost.children('.post_thumbnail-random').attr('id', 'random_thumbnail-'+randomNum);
-        locatePost.children('.post_thumbnail-random').attr('data-original', '/img/random/material-' + randomNum + '.png');
+    $('.post_thumbnail-random').attr('data-original', '/img/random/material-' + randomNum + '.png');
     $('.post_thumbnail-random').addClass('lazy');
-
-        locatePost = locatePost.next();
-    }
 </script>
 
+        
+    
+            <p class="article-headline-p">
+                PhaserJS微信小游戏尝试
+            </p>
+        </div>
+
+
+
+
+
+                
+                    <!-- Paradox Post Info -->
+                    <div class="mdl-color-text--grey-700 mdl-card__supporting-text meta">
+
+    <!-- Author Avatar -->
+    <div id="author-avatar">
+        <img src="/img/header.jpg" width="44px" height="44px" alt="Author Avatar"/>
+    </div>
+    <!-- Author Name & Date -->
+    <div>
+        <strong>terry.li</strong>
+        <span>5月 27, 2018</span>
+    </div>
+
+    <div class="section-spacer"></div>
+
+    <!-- Favorite -->
+    <!--
+        <button id="article-functions-like-button" class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon btn-like">
+            <i class="material-icons" role="presentation">favorite</i>
+            <span class="visuallyhidden">favorites</span>
+        </button>
+    -->
+
+    <!-- Qrcode -->
+    
+
+    <!-- Tags (bookmark) -->
+    
+
+    <!-- Share -->
+    
+        <button id="article-fuctions-share-button" class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon">
+    <i class="material-icons" role="presentation">share</i>
+    <span class="visuallyhidden">share</span>
+</button>
+<ul class="mdl-menu mdl-menu--bottom-right mdl-js-menu mdl-js-ripple-effect" for="article-fuctions-share-button">
+    
+
+    
+
+    <!-- Share Weibo -->
+    
+        <a class="post_share-link" href="http://service.weibo.com/share/share.php?appkey=&title=PhaserJS微信小游戏尝试&url=http://omret.com/2018/05/27/PhaserJS微信小游戏尝试/index.html&pic=http://omret.com/img/favicon.png&searchPic=false&style=simple" target="_blank">
+            <li class="mdl-menu__item">
+                分享到微博
+            </li>
+        </a>
+    
+
+    <!-- Share Twitter -->
+    
+        <a class="post_share-link" href="https://twitter.com/intent/tweet?text=PhaserJS微信小游戏尝试&url=http://omret.com/2018/05/27/PhaserJS微信小游戏尝试/index.html&via=terry.li" target="_blank">
+            <li class="mdl-menu__item">
+                分享到 Twitter
+            </li>
+        </a>
+    
+
+    <!-- Share Facebook -->
+    
+        <a class="post_share-link" href="https://www.facebook.com/sharer/sharer.php?u=http://omret.com/2018/05/27/PhaserJS微信小游戏尝试/index.html" target="_blank">
+            <li class="mdl-menu__item">
+                分享到 Facebook
+            </li>
+        </a>
+    
+
+    <!-- Share Google+ -->
+    
+        <a class="post_share-link" href="https://plus.google.com/share?url=http://omret.com/2018/05/27/PhaserJS微信小游戏尝试/index.html" target="_blank">
+            <li class="mdl-menu__item">
+                分享到 Google+
+            </li>
+        </a>
+    
+
+    <!-- Share LinkedIn -->
+    
+
+    <!-- Share QQ -->
+    
+
+    <!-- Share Telegram -->
+    
+</ul>
+
     
 </div>
+
+                
+
+                <!-- Post Content -->
+                <div id="post-content" class="mdl-color-text--grey-700 mdl-card__supporting-text fade out">
+    
+        <h3 id="PhaserJS微信小游戏的简单尝试"><a href="#PhaserJS微信小游戏的简单尝试" class="headerlink" title="PhaserJS微信小游戏的简单尝试"></a>PhaserJS微信小游戏的简单尝试</h3><h4 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h4><p>自从腾讯自己推出了跳一跳之后，微信小游戏就一直很火，感觉我也必须要尝试一下。但是Phaser官网没有提供关于微信小游戏的适配，我这边使用的是 <a href="https://github.com/finscn/weapp-adapter" target="_blank" rel="noopener">@大城小胖</a> 的Adapter，这边要特别感谢。</p>
+<p>####Shrink Ball</p>
+<h5 id="想法"><a href="#想法" class="headerlink" title="想法"></a>想法</h5><p>我从气球的充气漏气的运动中得到灵感，想到了控制小球大小然后躲避障碍的游戏方式。如果小球碰到了或者缩小到没有，那么就游戏结束了。我给这个游戏取名叫Shrink Ball（缩写SB），直译就是缩小球，缩写就有很多意思啦。</p>
+<h5 id="开发"><a href="#开发" class="headerlink" title="开发"></a>开发</h5><p>使用小胖的适配器，开发上基本没有什么太多的问题，基本就是使用phaser原生使用方式，应为游戏设计到的phaser对象和功能都是相对比较常用的，代码量也不是很大。微信接口我只用了显示转发按钮：<br><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">wx.showShareMenu()</span><br><span class="line">wx.onShareAppMessage(<span class="function"><span class="keyword">function</span> (<span class="params"></span>) </span>&#123;</span><br><span class="line">  <span class="keyword">return</span> &#123;</span><br><span class="line">    title: <span class="string">'快来和我一起玩缩小球吧，看看谁更厉害！'</span>,</span><br><span class="line">  &#125;</span><br><span class="line">&#125;)</span><br></pre></td></tr></table></figure></p>
+<p>以及排行榜数据上传接口:<br><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">let</span> kvlist = [&#123;<span class="attr">key</span>:<span class="string">"score"</span>,<span class="attr">value</span>:<span class="keyword">this</span>.score + <span class="string">""</span>&#125;];</span><br><span class="line">wx.setUserCloudStorage(&#123;</span><br><span class="line">  KVDataList:kvlist</span><br><span class="line">&#125;);</span><br></pre></td></tr></table></figure></p>
+<p>于是大家就能看到这样的游戏画面<br><img src="http://7xt4qr.com1.z0.glb.clouddn.com/shrinkball.gif" alt="ShrinkBall"></p>
+<h3 id="后话"><a href="#后话" class="headerlink" title="后话"></a>后话</h3><h4 id="发布"><a href="#发布" class="headerlink" title="发布"></a>发布</h4><p>原来我是打算将Shrink Ball上线，大家都能够玩上。但是小游戏上线需要软件著作权，软件著作权有几种方式方式可以方式可以获取</p>
+<p>一种是通过万能的某宝，费用大概是300，一个月的时间，另一种是自己去<a href="http://www.ccopyright.com.cn/" target="_blank" rel="noopener">中国版权保护中心</a> 不收取费用，但是要自己准备材料，流程也很麻烦，最坑的是时间需要3到6个月。。。</p>
+<h5 id="于是我放弃了。。。"><a href="#于是我放弃了。。。" class="headerlink" title="于是我放弃了。。。"></a>于是我放弃了。。。</h5><p>项目是开源的，大家可以在<a href="https://github.com/omretterry/wx-tinygame-shrinkball" target="_blank" rel="noopener">Github</a>上找到。</p>
+<p>后面我会将Shrink Ball放入20分钟挑战的系列视屏当中，但是不是微信小游戏了，而是一个页面游戏。我还是希望能够将我这个想法保留下来。</p>
+<p>最后的最后，吐槽一下我们版权中心的网站，为啥就一定要用IE嘞。。。</p>
+
+        
+    
+
+    
+</div>
+
+
+                
+
+                <!-- Post Comments -->
+                
+                    
+    <!-- 使用 来必力 -->
+<div id="livere-comment">
+    <div id="lv-container" data-id="city" data-uid="MTAyMC8zNjY1OS8xMzE5NA==">
+	<script type="text/ls-javascript" id="livere-comment-js">
+   (function(d, s) {
+       var j, e = d.getElementsByTagName(s)[0];
+       if (typeof LivereTower === 'function') { return; }
+       j = d.createElement(s);
+       j.src = 'https://cdn-city.livere.com/js/embed.dist.js';
+       j.async = true;
+       e.parentNode.insertBefore(j, e);
+   })(document, 'script');
+	</script>
+</div>
+</div>
+<style>
+    #livere-comment{
+        background-color: #eee;
+        padding: 2pc;
+    }
+</style>
+
+                
+            </div>
+
+            <!-- Post Prev & Next Nav -->
+            <nav class="material-nav mdl-color-text--grey-50 mdl-cell mdl-cell--12-col">
+    <!-- Prev Nav -->
+    
+
+    <!-- Section Spacer -->
+    <div class="section-spacer"></div>
+
+    <!-- Next Nav -->
+    
+        <a href="/2018/05/21/20分钟H5编程挑战：Flappy-Bird/" id="post_nav-older" class="next-content">
+            旧篇
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <button class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon mdl-color--white mdl-color-text--grey-900" role="presentation">
+                <i class="material-icons">arrow_forward</i>
+            </button>
+        </a>
+    
+</nav>
+
+        </div>
+    </div>
+
 
 
                     
