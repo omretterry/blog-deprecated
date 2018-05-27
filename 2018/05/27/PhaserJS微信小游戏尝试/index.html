@@ -241,7 +241,7 @@
 
     
         <meta property="article:published_time" content="Sun May 27 2018 15:29:48 GMT+0800">
-        <meta property="article:modified_time" content="Sun May 27 2018 16:31:27 GMT+0800">
+        <meta property="article:modified_time" content="Sun May 27 2018 16:57:36 GMT+0800">
     
 
     <!-- The Twitter Card protocol -->
@@ -264,7 +264,7 @@
     "mainEntityOfPage": "http://omret.com/2018/05/27/PhaserJS微信小游戏尝试/index.html",
     "headline": "PhaserJS微信小游戏尝试",
     "datePublished": "Sun May 27 2018 15:29:48 GMT+0800",
-    "dateModified": "Sun May 27 2018 16:31:27 GMT+0800",
+    "dateModified": "Sun May 27 2018 16:57:36 GMT+0800",
     "author": {
         "@type": "Person",
         "name": "terry.li",
@@ -348,7 +348,7 @@
     </button>
 
     <ul class="post-toc-wrap mdl-menu mdl-menu--bottom-left mdl-js-menu mdl-js-ripple-effect" for="post-toc-trigger-btn" style="max-height:80vh; overflow-y:scroll;">
-        <ol class="post-toc"><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#PhaserJS微信小游戏的简单尝试"><span class="post-toc-number">1.</span> <span class="post-toc-text">PhaserJS微信小游戏的简单尝试</span></a><ol class="post-toc-child"><li class="post-toc-item post-toc-level-4"><a class="post-toc-link" href="#前言"><span class="post-toc-number">1.1.</span> <span class="post-toc-text">前言</span></a><ol class="post-toc-child"><li class="post-toc-item post-toc-level-5"><a class="post-toc-link" href="#想法"><span class="post-toc-number">1.1.1.</span> <span class="post-toc-text">想法</span></a></li><li class="post-toc-item post-toc-level-5"><a class="post-toc-link" href="#开发"><span class="post-toc-number">1.1.2.</span> <span class="post-toc-text">开发</span></a></li></ol></li></ol></li><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#后话"><span class="post-toc-number">2.</span> <span class="post-toc-text">后话</span></a><ol class="post-toc-child"><li class="post-toc-item post-toc-level-4"><a class="post-toc-link" href="#发布"><span class="post-toc-number">2.1.</span> <span class="post-toc-text">发布</span></a><ol class="post-toc-child"><li class="post-toc-item post-toc-level-5"><a class="post-toc-link" href="#于是我放弃了。。。"><span class="post-toc-number">2.1.1.</span> <span class="post-toc-text">于是我放弃了。。。</span></a></li></ol></li></ol></li></ol>
+        <ol class="post-toc"><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#PhaserJS微信小游戏的简单尝试"><span class="post-toc-number">1.</span> <span class="post-toc-text">PhaserJS微信小游戏的简单尝试</span></a><ol class="post-toc-child"><li class="post-toc-item post-toc-level-4"><a class="post-toc-link" href="#前言"><span class="post-toc-number">1.1.</span> <span class="post-toc-text">前言</span></a></li><li class="post-toc-item post-toc-level-4"><a class="post-toc-link" href="#Shrink-Ball"><span class="post-toc-number">1.2.</span> <span class="post-toc-text">Shrink Ball</span></a><ol class="post-toc-child"><li class="post-toc-item post-toc-level-5"><a class="post-toc-link" href="#想法"><span class="post-toc-number">1.2.1.</span> <span class="post-toc-text">想法</span></a></li><li class="post-toc-item post-toc-level-5"><a class="post-toc-link" href="#开发"><span class="post-toc-number">1.2.2.</span> <span class="post-toc-text">开发</span></a></li></ol></li></ol></li><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#后话"><span class="post-toc-number">2.</span> <span class="post-toc-text">后话</span></a><ol class="post-toc-child"><li class="post-toc-item post-toc-level-4"><a class="post-toc-link" href="#发布"><span class="post-toc-number">2.1.</span> <span class="post-toc-text">发布</span></a><ol class="post-toc-child"><li class="post-toc-item post-toc-level-5"><a class="post-toc-link" href="#于是我放弃了。。。"><span class="post-toc-number">2.1.1.</span> <span class="post-toc-text">于是我放弃了。。。</span></a></li></ol></li></ol></li></ol>
     </ul>
     
 
@@ -484,8 +484,7 @@
                 <div id="post-content" class="mdl-color-text--grey-700 mdl-card__supporting-text fade out">
     
         <h3 id="PhaserJS微信小游戏的简单尝试"><a href="#PhaserJS微信小游戏的简单尝试" class="headerlink" title="PhaserJS微信小游戏的简单尝试"></a>PhaserJS微信小游戏的简单尝试</h3><h4 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h4><p>自从腾讯自己推出了跳一跳之后，微信小游戏就一直很火，感觉我也必须要尝试一下。但是Phaser官网没有提供关于微信小游戏的适配，我这边使用的是 <a href="https://github.com/finscn/weapp-adapter" target="_blank" rel="noopener">@大城小胖</a> 的Adapter，这边要特别感谢。</p>
-<p>####Shrink Ball</p>
-<h5 id="想法"><a href="#想法" class="headerlink" title="想法"></a>想法</h5><p>我从气球的充气漏气的运动中得到灵感，想到了控制小球大小然后躲避障碍的游戏方式。如果小球碰到了或者缩小到没有，那么就游戏结束了。我给这个游戏取名叫Shrink Ball（缩写SB），直译就是缩小球，缩写就有很多意思啦。</p>
+<h4 id="Shrink-Ball"><a href="#Shrink-Ball" class="headerlink" title="Shrink Ball"></a>Shrink Ball</h4><h5 id="想法"><a href="#想法" class="headerlink" title="想法"></a>想法</h5><p>我从气球的充气漏气的运动中得到灵感，想到了控制小球大小然后躲避障碍的游戏方式。如果小球碰到了或者缩小到没有，那么就游戏结束了。我给这个游戏取名叫Shrink Ball（缩写SB），直译就是缩小球，缩写就有很多意思啦。</p>
 <h5 id="开发"><a href="#开发" class="headerlink" title="开发"></a>开发</h5><p>使用小胖的适配器，开发上基本没有什么太多的问题，基本就是使用phaser原生使用方式，应为游戏设计到的phaser对象和功能都是相对比较常用的，代码量也不是很大。微信接口我只用了显示转发按钮：<br><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">wx.showShareMenu()</span><br><span class="line">wx.onShareAppMessage(<span class="function"><span class="keyword">function</span> (<span class="params"></span>) </span>&#123;</span><br><span class="line">  <span class="keyword">return</span> &#123;</span><br><span class="line">    title: <span class="string">'快来和我一起玩缩小球吧，看看谁更厉害！'</span>,</span><br><span class="line">  &#125;</span><br><span class="line">&#125;)</span><br></pre></td></tr></table></figure></p>
 <p>以及排行榜数据上传接口:<br><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">let</span> kvlist = [&#123;<span class="attr">key</span>:<span class="string">"score"</span>,<span class="attr">value</span>:<span class="keyword">this</span>.score + <span class="string">""</span>&#125;];</span><br><span class="line">wx.setUserCloudStorage(&#123;</span><br><span class="line">  KVDataList:kvlist</span><br><span class="line">&#125;);</span><br></pre></td></tr></table></figure></p>
 <p>于是大家就能看到这样的游戏画面<br><img src="http://7xt4qr.com1.z0.glb.clouddn.com/shrinkball.gif" alt="ShrinkBall"></p>
